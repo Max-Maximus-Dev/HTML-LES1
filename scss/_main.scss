@@ -1,0 +1,23 @@
+@mixin text($headersize, $headerweight, $headerline) {
+    font-family: "Inter", serif;
+    font-size: $headersize;
+    font-weight: $headerweight;
+    line-height: $headerline;
+}
+
+.sec1-wrap{
+    width: 100%;
+    height: 669px;
+    background-image: url(/images/photo_2024-11-28_17-21-43\ 1.png), url(/images/1626193453_55-kartinkin-com-p-chernii-ekran-fon-krasivo-60.jpg);
+}
+
+.maintext1{
+    color: white;
+    @include text(68px,700,82px);
+    width: 614px;
+    height: 164px;
+    align-items: center;
+    margin-left: 413px;
+    padding-top: 186px;
+    text-align: center;
+}

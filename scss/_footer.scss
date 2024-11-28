@@ -1,0 +1,67 @@
+@mixin text($headersize, $headerweight, $headerline) {
+    font-family: "Inter", serif;
+    font-size: $headersize;
+    font-weight: $headerweight;
+    line-height: $headerline;
+}
+
+
+footer{
+    background-color: #1E3156;
+    width: 100%;
+    height: 354px;
+}
+
+.part1{
+    margin-top: 58px;
+    margin-left: 168px;
+    align-items: center;
+    text-align: center;
+    width: 337px;
+    height: 195px
+}
+
+.nomeryy{
+    @include text(36px,700,44px);
+    color: white;
+}
+
+.nomery1{
+    color: #8CF000;
+    @include text(26px,700,31px);
+    gap: 11px;
+    flex-direction: column;
+    margin-top: 36px;
+}
+
+.part3{
+    margin-top: 58px;
+    margin-left: 250px;
+    align-items: center;
+    text-align: center;
+    width: 266px;
+    height: 116px;
+    flex-direction: column;
+}
+
+.iconss{
+    gap: 27px;
+}
+
+.nomeryyy{
+    @include text(32px,700,39px);
+    color: white;
+    margin-bottom: 34px;
+}
+
+.part2{
+    flex-direction: column;
+    width: 198px;
+    height: 203px;
+    gap: 17px;
+    margin-left: 115px;
+    margin-top: 52px;
+    @include text(22px,700,27px);
+    text-align: center;
+    color: white;
+}

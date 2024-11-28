@@ -1,0 +1,51 @@
+@mixin text($headersize, $headerweight, $headerline) {
+    font-family: "Inter", serif;
+    font-size: $headersize;
+    font-weight: $headerweight;
+    line-height: $headerline;
+}
+
+header{
+    width: 100%;
+    height: 178px;
+}
+
+.headerup{
+    width: 100%;
+    height: 68px;
+    background-color: #1E3156;
+}
+
+.nomery{
+    width: 505px;
+    height: 31px;
+    color: #8CF000;
+    @include text(24px,700,29px);
+    margin-top: 17px;
+    margin-left: 83px;
+    gap: 53px;
+}
+
+.icons{
+    margin-left: 546px;
+    gap: 27px;
+    margin-top: 17px;
+}
+
+.headerdown{
+    width: 1440px;
+    height: 110px;
+    align-items: center;
+    color: #1E3156
+}
+
+.maintext{
+    @include text(24px,700,29px);
+    margin-left: 122px;
+}
+
+.menu{
+    @include text(24px,400,29px);
+    gap: 23px;
+    margin-left: 466px;
+}
